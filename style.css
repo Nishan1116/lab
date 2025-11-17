@@ -1,0 +1,107 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+  background: #222;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+}
+
+nav a {
+  margin-left: 12px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+nav a.active,
+nav a:hover {
+  background: #0077cc;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 16px auto;
+  padding: 0 12px;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
